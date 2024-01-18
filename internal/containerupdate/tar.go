@@ -12,7 +12,7 @@ const TarExitCodePermissionDenied = 2
 
 func tarCmd() model.Cmd {
 	return model.Cmd{
-		Argv: []string{"tar", "-C", "/", "-x", "-f", "-"},
+		Argv: []string{"tar", "-C", "/", "-x", "--overwrite", "-f", "-"},
 	}
 }
 
